@@ -12,37 +12,52 @@
 <body class="bg-dark text-white">
    
     <!-- Navigation Bar -->
-      <header class="bg-dark  text-start py-5 m-5 ">
+      <header class="bg-dark  text-start py-2 m-3">
        
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top m-0  ">
-  <div class="container-fluid ">
-    <a class="navbar-brand" href="#">
-        <img src="images/Image_fx.jpg" alt="Bootstrap" width="50" height="50" class="img"></a>
-        <style>
-            .navbar-brand img {
-                border-radius: 50%;
-            }
-        </style>
-   <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-      aria-label="Toggle navigation">
+ <nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <img src="images/Image_fx.jpg" alt="" width="50" height="50" class="d-inline-block align-text-top rounded-circle">
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>-->
-    <div class="collapse navbar-collapse justify-content-end m-0" id="navbarNavAltMarkup"></div>
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
-        <a class="nav-link" href="#level ">Skills</a>
-        <a class="nav-link" href="#skill">Services</a>
-        <a class="nav-link" href="#project">Projects</a>
-        <button class="btn btn-outline-success me-2" type="button"><a href="documents/Corban Mwihia CV.pdf" 
-            download class="download-cv"></a>download-cv</button>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Phil Mwihia</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#level">Skills</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#skill">Services</a></li>
+              <li><a class="dropdown-item" href="#project">Projects</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              
+            </ul>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-outline-success"> <a href="documents/Corban Mwihia.pdf" 
+          download class="download-cv link-success link-offset-2 link-underline-opacity-25
+           link-underline-opacity-100-hover" >Download CV</a></button>
+        </form>
       </div>
     </div>
   </div>
 </nav>
  </header>
 <div class="container text-start mt-4 pt-3 mb-0 ">
-    <div class="jumbotron bg-dark text-white">  
+    <div class="jumbotron bg-dark text-white text-start">  
  <h3 class="text-white" id="Home">Hi there,l am</h3>
         <h1 class="text-warning bg-dark">Philip Corban M Mwihia</h1>
         <h3 class=" text-white">Web Developer</h3>
@@ -163,7 +178,7 @@ philip-mwihia-01b709369
     </div>
   </div>
 </div>
-<div class="container text-center">
+<div class="container text-center" id="project" >
     <h1 id="project " class="m-5">My Projects</h1>
     <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col text-bg-dark mb-3 border-warning mb-3">
